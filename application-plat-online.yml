@@ -3,3 +3,9 @@ server:
 spring:
   application:
     name: PINGGOU-PLAT
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///pinggou?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+
