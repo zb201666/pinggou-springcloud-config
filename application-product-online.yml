@@ -8,3 +8,5 @@ spring:
     url: jdbc:mysql:///pinggou-product?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: root
+mybatis-plus:
+  type-aliases-package: cn.itsource.pinggou.domain,cn.itsource.pinggou.query
