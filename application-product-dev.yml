@@ -1,0 +1,10 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: PINGGOU-PRODUCT
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///pinggou-product?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
