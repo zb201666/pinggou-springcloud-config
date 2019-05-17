@@ -1,5 +1,6 @@
 server:
   port: 6969
+  max-http-header-size: 100000000
 spring:
   application:
     name: PINGGOU-COMMON
