@@ -13,17 +13,6 @@ zuul:
       path: /product/** #这是所有路径前的通配
   ignored-services: "*" #用*来通配符，忽略从9527端口通过服务名来调用
   prefix: "/services" #这是所有路径的前缀
-
-feign:
-   hystrix:
-     #开启熔断支持
-     enabled: true 
-   client:
-     config:
-       remote-service:   #服务名，填写default为所有服务
-         connectTimeout: 3000
-	 readTimeout: 3000
-
 hystrix:
   command:
     myusers-service:
