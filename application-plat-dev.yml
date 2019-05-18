@@ -8,12 +8,4 @@ spring:
     url: jdbc:mysql:///pinggou-plat?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: root
-feign:
-   hystrix:
-     #开启熔断支持
-     enabled: true 
-   client:
-     config:
-       remote-service:   #服务名，填写default为所有服务
-         connectTimeout: 5000
-         readTimeout: 5000
+

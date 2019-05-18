@@ -10,3 +10,13 @@ spring:
     password: root
 mybatis-plus:
   type-aliases-package: cn.itsource.pinggou.domain,cn.itsource.pinggou.query
+  
+feign:
+   hystrix:
+     #开启熔断支持
+     enabled: true 
+   client:
+     config:
+       remote-service:   #服务名，填写default为所有服务
+         connectTimeout: 5000
+         readTimeout: 5000
