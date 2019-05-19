@@ -11,6 +11,9 @@ zuul:
     product:
       serviceId: pinggou-product #这是调用满足条件的服务名，注意要小写
       path: /product/** #这是所有路径前的通配
+    common:
+      serviceId: pinggou-common #这是调用满足条件的服务名，注意要小写
+      path: /common/** #这是所有路径前的通配
   ignored-services: "*" #用*来通配符，忽略从9527端口通过服务名来调用
   prefix: "/services" #这是所有路径的前缀
 hystrix:
@@ -21,6 +24,10 @@ hystrix:
           thread:
             timeoutInMilliseconds: 5000
 pinggou-product: 
+  ribbon:
+    ConnectTimeout: 1000
+    ReadTimeout: 5000
+pinggou-common: 
   ribbon:
     ConnectTimeout: 1000
     ReadTimeout: 5000
